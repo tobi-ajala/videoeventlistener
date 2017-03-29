@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Video Listener</title>
+</head>
+
+<body>
+
+  <video id="ad1" controls="controls" autoplay="autoplay">
+    <source src="http://cdn.http.anno.test.channel4.com/m/1/174055/7/2047111/MUM-HATD170-020_1462888808_93626_17.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+</body>
+
+<script type='text/javascript'>
+    document.getElementById('ad1').addEventListener('ended',myHandler,false);
+    function myHandler(e) {
+      if(!e) {
+        e = window.event;
+      }
+      alert("Video Finished!");
+    }
+</script>
+
+</html>
